@@ -1,0 +1,284 @@
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: #1B1B1b;
+            max-width: 1500px;
+            margin:  0 auto;
+            color: #FFFFFF;
+        }
+        a{
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 40px;
+            height: 60px;
+            align-items: center;
+        }
+        nav .left a{
+            color:#FFFFFF ;
+            font-size: 30px;
+            font-weight: 600;
+        }
+        nav.right a{
+            color: #FFFFFF;
+            margin: 0 10px;
+        }
+        nav .right a:last-child{
+            color: #FFFFFF;
+            background-color: #1B1B1b;
+            padding: 5px 15px;
+            border-radius: 5px;
+        }
+        nav.right a span{
+            margin-left: 5px;
+        }
+
+        .first{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+            margin: 50px 0;
+            margin-bottom: 100px;
+            gap: 40px;
+        }
+        .first .text{
+            flex: 5;
+        }
+        .first .text .h2{
+            font-size: 45px;
+        }
+        .first .text .links{
+            margin-top: 20px;
+        }
+        .first .text .links a{
+            display: inline-block;
+            padding: 5px 10px;
+            border: 2px solid #F8B400;
+            margin-right: 10px;
+            border-radius: 5px;
+            margin-bottom:10px ;
+            transition: .1s;
+        }
+        .first .text .links a:hover{
+            color: #FF00FF;
+            border: 2px solid #FF00FF;
+        }
+
+        .first .pic{
+            flex: 2;
+            display: flex;
+            justify-content: right;
+        }
+
+        .first .pic img{
+            width: 300px;
+            border-radius: 50%;
+        }
+
+        /* qualifications */
+        .qualifications-part{
+            padding: 0 50px;
+            margin-bottom: 100px;
+            font-size: 20px;
+            text-align: center;
+            
+        }
+    
+        .qualifications-part .txt{
+            text-align: center;
+            margin-top: 10px;
+            font-size: 15px;
+            
+        }
+
+        /* project */
+        .project-part{
+            padding: 0 50px;
+            margin-bottom: 100px;
+            font-size: 20px;
+           text-align: center;
+        
+        }
+    
+        .project-part .text{
+            text-align: center;
+            margin-top: 10px;
+            font-size: 15px;
+        }
+
+        .project-part h4{
+            text-align: center;
+            font-size: 15px;
+            
+        }
+
+        /* Skills */
+        .skills-part{
+            padding: 0 50px;
+            margin-bottom: 100px;
+        }
+        .skills-part h2{
+            text-align: center;
+            font-size: 30px;
+            
+        }
+        .skills-part .text{
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .skills-part .logos{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .skills-part .logos .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:200px;
+            padding: 10px 20px;
+            margin: 10px;
+            border: 1.5px solid #d3d3d3;
+            border-radius: 5px;
+            gap: 10px;
+        }
+
+        .skills-part .logos .logo span{
+            font-size: 18px;
+        }
+
+        .skills-part .logos .logo img{
+            width: 25px;
+            height: 25px;
+            object-fit: contain;
+            border-radius: 2px;
+        }
+        /* contact */
+        .contact-part{
+            padding: 0 50px;
+            margin-bottom: 50px;
+            
+        }
+        .contact-part h2{
+            
+            font-size: 28px;
+        
+        }
+        .contact-part .grp{
+            display: flex;
+            gap: 50px;
+        }
+        .contact-part .grp .text{
+            flex: 3;
+            margin-top: 15px;
+        }
+        .contact-part .grp form{
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-part .grp form input,
+        .contact-part .grp form textarea{
+            font-family: sans-serif;
+            border: 2px solid skyblue;
+            background-color: transparent;
+            padding: 10px;
+            margin-bottom: 15px;
+            outline: none;
+            resize: none;
+            transition: 1.5;
+        }
+        .contact-part .grp form button{
+            font-size: 16px;
+            font-family: sans-serif;
+            color: white;
+            background-color: blue;
+            border: none;
+            cursor: pointer;
+            height: 50px;
+            border-radius: 5px;
+            transition: 1.5;
+        }
+        .contact-part .grp form button:hover{
+            filter: brightness(.5);
+        }
+        
+
+        @media (max-width:850px) {
+            .first .text h2{
+                font-size: 32px;
+            }
+        }
+
+        @media(max-width:740px){
+            .first{
+                flex-direction: column-reverse;
+            }
+        }
+        .first .pic img{
+            width: 300px;
+        }
+
+
+        @media(max-width:600px){
+            nav{
+            padding: 0 20px;
+            }
+            nav.right a{
+                font-size: 20px;
+            }
+            nav .right a:last-child{
+                color: #FFFFFF;
+                background-color: transparent;
+                padding: 0;
+            }
+            nav .right a span{
+                display: none;
+            }
+
+            .first{
+                padding:  0 20px;
+            }
+
+            .first .text h2{
+                font-size: 30px;
+            }
+
+            /* qualifications */
+
+            .qualifications-part{
+                padding: 0 20px;
+            }
+            /* project */
+
+            .project-part{
+                padding: 0 20px;
+            }
+
+            /* skills */
+            .skills-part{
+                padding: 0 20px;
+            
+            }
+            .skills-part .logos .logo span{
+                font-size: 16px;
+            }
+            /* contact */
+            .contact-part{
+                padding: 0 20px;
+                
+            }
+              }
